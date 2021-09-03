@@ -24,6 +24,7 @@
     </article>
     <article class="result">
         <img id="img" class ="rounded_circle mt-5" src="penguin_01.png" alt="animal">
+        <h2></h2>
         <h2 id="penguin" class="text-center mt-5">펭귄등급</h2>
         <h3 id="explain" class="text-center mt-5">설명</h3>
 
@@ -49,6 +50,14 @@
             9: {"title":"문제 9번", "type":"score", "A":"ㄷ", "B":"ㄱ"},
             10: {"title":"문제 10번", "type":"score", "A":"ㄷ", "B":"ㄱ"},
         }
+        var result = {
+            "실버":{"score":score, "explain":"설명1", "img":"penguin_01.png"},
+            "골드":{"score":score, "explain":"설명2", "img":"penguin_01.png"},
+            "플레티넘":{"score":score, "explain":"설명3", "img":"penguin_01.png"},
+            "다이아몬드":{"score":score, "explain":"설명4", "img":"penguin_01.png"},
+            "마스터":{"score":score, "explain":"설명5", "img":"penguin_01.png"},
+        }
+
         // 메인 화면 설정
         function start() {
             $(".start").hide();
@@ -72,13 +81,32 @@
             if (num==11) {
                 $(".question").hide();
                 $(".result").show();
+                var score = $("#score").val();
+                var grade = "";
+                if (score < 2){
+                    grade += "실버";
+                } else if (score < 4){
+                    grade += "골드";
+                }else if (score < 6){
+                    grade += "플레티넘";
+                }else if (score < 8){
+                    grade += "다이아몬드";
+                }else {
+                    grade += "마스터";
+                }
+                alert(score);
+                $("#img").attr("src",result[grade]["img"]);
+                $("#penguin").html(grade);
+                $("#explain").html(result[grade]["explain"]);
+
+            } else {
+                $(".progress-bar").attr('style','width: calc(100/10*'+num+'%)');
+                $("#title").html(q[num]["title"]);
+                $("#type").val(q[num]['type']);
+                $("#A").html(q[num]["A"]);
+                $("#B").html(q[num]["B"]);
+                num++;
             }
-            $(".progress-bar").attr('style','width: calc(100/10*'+num+'%)');
-            $("#title").html(q[num]["title"]);
-            $("#type").val(q[num]['type']);
-            $("#A").html(q[num]["A"]);
-            $("#B").html(q[num]["B"]);
-            num++;
         }
 
     </script>
