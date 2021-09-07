@@ -11,6 +11,9 @@ article {
     flex-direction: column;
 }
 
+button {
+    display: block;
+}
 
 /* 시작화면 */
 .question {
