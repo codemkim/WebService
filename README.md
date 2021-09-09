@@ -1,12 +1,14 @@
 # WebService
 
-웹서비스를 만들거임
+웹 서비스
 
+1. Description(설명)
+    펭귄을 통한 의식 수준 개선 
 
-질문좀 가다듬어야 할 듯
+2. Environment(설치환경)
 
+3. Prerequisite(전제조건)
 
-css 좀 배워서 이쁘게 꾸미야됨
+4. Files(코드요약)
 
-
-1일 1일 커밋
+5. Usage(사용법)
