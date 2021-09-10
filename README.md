@@ -4,6 +4,8 @@
 
 1. Description(설명)
     펭귄을 통한 의식 수준 개선 
+    어케? 죽인 수로
+    
 
 2. Environment(설치환경)
 
