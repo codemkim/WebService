@@ -7,6 +7,8 @@
     어케? 죽인 수로
     어케? 설문을 통해서 
     ? 일단 ppt먼저 작성하고 시작하자
+    gdgd
+    
 2. Environment(설치환경)
 
 3. Prerequisite(전제조건)
