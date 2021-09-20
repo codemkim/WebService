@@ -8,8 +8,7 @@
     어케? 설문을 통해서 
     ? 일단 ppt먼저 작성하고 시작하자
     gdgd
-    gd
-2. Environment(설치환경)
+    gd123
 123123123
 3. Prerequisite(전제조건)
 
