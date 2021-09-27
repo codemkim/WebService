@@ -46,7 +46,7 @@
 
         
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        <div class="share addthis_inline_share_toolbox"></div>
+        <div class="share addthis_inline_share_toolbox mt-5"></div>
     </article>
     <article class="kakao_ad mt-5">
         <ins class="kakao_ad_area" style="display:none;" 
@@ -85,11 +85,11 @@
             12: {"title":"마트 이용 시 개인용 장바구니를 들고 다닌다", "type":"score", "A":"YES", "B":"NO"},
         }
         var result = {
-            "실버":{"score":score, "explain":"설명1", "img":"penguin_02.png"},
-            "골드":{"score":score, "explain":"설명2", "img":"penguin_02.png"},
-            "플레티넘":{"score":score, "explain":"설명3", "img":"penguin_02.png"},
-            "다이아몬드":{"score":score, "explain":"설명4", "img":"penguin_02.png"},
-            "마스터":{"score":score, "explain":"설명5", "img":"penguin_02.png"},
+            "펭실":{"score":score, "explain":"당신은 펭귄지킴이 실버 등급입니다", "img":"penguin_02.png"},
+            "펭골":{"score":score, "explain":"당신은 펭귄지킴이 골드 등급입니다", "img":"penguin_02.png"},
+            "펭플":{"score":score, "explain":"당신은 펭귄지킴이 플레티넘 등급입니다", "img":"penguin_02.png"},
+            "펭다":{"score":score, "explain":"당신은 펭귄지킴이 다이아몬드 등급입니다", "img":"penguin_02.png"},
+            "펭마":{"score":score, "explain":"당신은 펭귄지킴이 마스터 등급입니다", "img":"penguin_02.png"},
         }
 
         // 메인 화면 설정
@@ -118,15 +118,15 @@
                 var score = $("#score").val();
                 var grade = "";
                 if (score < 2){
-                    grade += "실버";
+                    grade += "펭실";
                 } else if (score < 4){
-                    grade += "골드";
+                    grade += "펭골";
                 }else if (score < 6){
-                    grade += "플레티넘";
+                    grade += "펭플";
                 }else if (score < 8){
-                    grade += "다이아몬드";
+                    grade += "펭다";
                 }else {
-                    grade += "마스터";
+                    grade += "펭마";
                 }
                 $("#img").attr("src",result[grade]["img"]);
                 $("#penguin").html(grade);
