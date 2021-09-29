@@ -24,7 +24,7 @@ https://www.miricanvas.com/v/1klgqr
 
 https://penguinsave.netlify.app/
 
-
+강사님
 참고사항
 3번째 슬라이드
 기후변화 및 해수면 상승 등으로 가장 심각한 지구온난화 -> 문맥이 좀 자연스럽지 않은 것 같아요
